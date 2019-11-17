@@ -1,0 +1,8 @@
+%h1 Create A New Entry
+= form_for @task do |f|
+  %p
+    = f.label :title 
+    = f.text_field :title
+  %p
+    = f.submit
+
