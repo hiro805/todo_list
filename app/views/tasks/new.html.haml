@@ -4,6 +4,8 @@
     = f.label :title 
     %br/
     = f.text_field :title
+    - if @task.errors.any?
+      = @task.errors.messages[:title][0]
   %p
     = f.submit
 
